@@ -1,0 +1,139 @@
+@import '../../assets/styles/colors.scss'; 
+@import '../../assets/styles/fonctions.scss'; 
+
+
+header{
+    font-weight: 700;
+    padding-top: 1rem;
+    overflow: auto;
+
+    a{
+        text-decoration: none;
+        color: black;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+
+    .mainNavBarHorizontal{
+
+        padding: 0 3rem;
+
+        .navBarLeft, .navBarRight, .navBarLeftLinks, .subNavBar{
+            display: flex;
+            align-items: center;
+            column-gap: 2rem;
+        }
+        
+        .navBarRight a:first-child{
+            color: $blue;
+        }
+        
+        .navBarRight a:last-child{
+            font-size: rem(12px); 
+        }
+    }
+
+    
+
+    .mainNavBarVertical{
+        background-color: blue;
+        color: white;
+        padding: 1rem 3rem;
+
+        a{
+            text-decoration: none;
+            color: white;
+    
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        .menu{
+            display: flex;
+            align-items: center;
+            column-gap: 2rem;
+            margin-bottom: 2rem;
+
+            span{
+                cursor: pointer;
+            }
+        }
+
+        .topLinks{
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+
+        .middleLinks{
+            font-size: rem(10px); 
+
+            p{
+                margin-bottom: 1rem;
+            }
+        }
+
+        .bottomLinks{
+            font-size: rem(10px); 
+
+            overflow-x: auto;
+
+            nav {
+                display: inline-block;
+                vertical-align: top;
+                width: calc(100% / 4);
+                padding-right: 1rem;
+
+                p{
+                    a{
+                        font-weight: 900;
+                        font-size: rem(12px);
+                    }
+                }
+            }
+        }
+    }
+
+
+    
+    .subNavBar{
+        display: flex;
+        column-gap: 2rem;
+        padding: 1rem 3rem;
+        font-size: rem(12px);
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    .mainNavBarHorizontal{
+        font-size: rem(12px);
+    }
+}
+
+@media screen and (min-width: 900px){
+    .mainNavBarHorizontal{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*.mainNavBarVertical{
+        display: none;
+    }*/
+}
+
+@media screen and (max-width: 1024px){
+    .mainNavBarHorizontal{
+        display: none;
+    }
+
+    /*.mainNavBarVertical{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }*/
+}

@@ -1,0 +1,398 @@
+@import '../../assets/styles/colors.scss'; 
+@import '../../assets/styles/fonctions.scss'; 
+
+
+.headerImage{
+    background-image: url('../../assets/images/header.jpg'); 
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+
+    position: relative;
+
+    width: 83.308931186vw;
+    min-height: 100vh;
+
+    margin-left: 8.5vw;
+
+    color: $red-light;
+
+    overflow-x: hidden;
+
+    //centrer le span dans la div
+    span{
+        font-weight: 900;
+        font-size: 10rem; 
+
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .headerImage{
+        span{
+            font-size: 5rem;
+        }
+    }
+}
+
+.AboutText{
+    padding-block: 5rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutBodyText1, .aboutBodySimpleText{
+    line-height: 1.7;
+
+    padding-block: 1rem;
+
+    width: 60vw;
+
+    a{
+        text-decoration: none;
+    }
+
+}
+
+.aboutBodyText1{
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 900px) {
+    .aboutBodyText1{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aboutBodyText1, .aboutBodySimpleText{
+        width: 100vw;
+        padding: 0 8.5vw;
+        padding-block: 1rem;
+    }
+}
+
+
+.aboutBodyText p:first-child{
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+
+
+.firstBox{
+    width: 100vw;
+    height: 58.345534407vw;
+
+    position: relative; 
+
+    padding-block: 8vw;
+
+
+    .firstBoxLeft{
+        background: url('../../assets/images/photo-1.jpg'); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: 41.654465593vw; 
+        height: 41.654465593vw;
+
+        margin-left: 8.5vw;
+
+        display: inline-block;
+        vertical-align: middle;
+        
+        position: relative;
+        z-index: 1;
+    }
+
+    .firstBoxRight{
+        background-color: $yellow;
+        width: 58.345534407vw; 
+        height: 100%; 
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .firstBoxRightImage{
+        width: 33.308931186vw;
+        height: 25.036603221vw;
+
+        background: url('../../assets/images/photo-2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        display: inline-block;
+        vertical-align: middle;
+        z-index: 1;
+
+        margin-left: 8.5vw;
+
+        position: relative;
+        z-index: 1;
+    }
+
+
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    iframe{
+        width: 60vw;
+        height: 30vw;
+    }
+
+    p{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.secondBox{
+    width: 100vw;
+    height: 75vw;
+
+    position: relative;
+    padding-block: 8vw;
+
+    .secondBoxLeft{
+        background-color: $green-light;
+        width: 58.345534407vw; 
+        height: 100%; 
+    
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+
+    .secondBoxLeftImages{
+        margin-left: 8.5vw;
+
+        width: 33.308931186vw;
+        height: 50.073206442vw;
+
+        position: relative;
+        z-index: 1;
+
+        display: inline-block;
+        vertical-align: middle;
+
+        .image1{
+            background: url('../../assets/images/photo-3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            width: 33.308931186vw;
+            height: 25.036603221vw;
+        }
+
+        .image2{
+            background: url('../../assets/images/photo-4.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            width: 33.308931186vw;
+            height: 25.036603221vw;
+
+            margin-top: 8.5vw;
+        }
+    }
+    
+    
+    .secondBoxRightImage{
+        width: 41.654465593vw; 
+        height: 41.654465593vw;
+    
+        background-color: red;
+    
+        background: url('../../assets/images/photo-5.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        position: relative;
+        z-index: 1;
+
+        display: inline-block;
+        vertical-align: middle;
+
+        margin-left: 8.5vw;
+    }
+}
+
+
+.singleImage{
+    background: url('../../assets/images/poster-meet-the-makers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 83.308931186vw;
+    height: 46.852122987vw;
+
+    margin-left: 8.5vw;
+
+    padding-block: 2rem;
+}
+
+
+.thirdBox{
+    width: 100vw; 
+    height: 58.33333vw;
+
+    position: relative;
+
+    padding-block: 8vw;
+
+    overflow: hidden;
+
+
+    .thirdBoxLeftImage{
+        background: url('../../assets/images/photo-6-a.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 33.308931186vw;
+        height: 25.036603221vw;
+
+        position: relative;
+        z-index: 1;
+
+        display: inline-block;
+        vertical-align: middle;
+
+        margin-left: 8.5vw;
+    }
+
+    .thirdBoxMiddle{
+        width: 66.66667vw;
+        height: 100%;
+        background-color: $purple-light;
+
+        position: absolute;
+        top: 0;
+        left: 16.66667vw;
+    }
+
+    .thirdBoxRigtImage{
+        background: url('../../assets/images/photo-7.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 41.654465593vw;
+        height: 41.654465593vw;
+
+        position: relative;
+        left: 18vw;
+        z-index: 1;
+
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.forthBox{
+    height: 41.654465593vw;
+    width: 83.308931186vw;
+
+    margin-left: 8.5vw;
+
+
+    display: flex;
+
+    .forthBoxLeftImage{
+        background: url('../../assets/images/photo-8.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 41.654465593vw;
+        height: 100%; 
+    }
+
+    .forthBoxRight{
+        width: 41.654465593vw;
+        height: 100%;
+
+        line-height: 1.7;
+        font-size: 1.5rem;
+        font-weight: 900;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        background-color: $blue-light;
+
+        .forthBoxRightFirstText{
+            width: 60%;
+            margin: 0 8.5vw;
+        }
+
+        .forthBoxRightLink{
+            margin: 1rem 8.5vw;
+            color: $blue;
+
+            text-decoration: none;
+
+            &::after{
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 10px;
+                height: 10px;
+                
+                border-top: rem(2px) solid $blue;
+                border-right: rem(2px) solid $blue;
+
+                transform: rotate(45deg);
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .forthBox{
+        height: 83.308931186vw;
+        flex-direction: column;
+        align-items: center;
+
+        .forthBoxLeftImage{
+            background: url('../../assets/images/photo-8.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+    
+            width: 83.308931186vw;
+            min-height: 50%;
+        }
+
+        .forthBoxRight{
+            width: 83.308931186vw;
+            
+            margin: 0;
+
+            font-size: 1rem;
+
+            .forthBoxRightFirstText{
+                width: 100%;
+                margin: 0;
+                padding: 0 8.5vw;
+            }
+        }
+    }
+}
+

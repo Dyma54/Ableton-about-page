@@ -1,0 +1,39 @@
+@import './assets/styles/colors.scss'; 
+@import './assets/styles/fonctions.scss'; 
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/poppins-v21-latin/poppins-v21-latin-regular.woff2') format('woff2'); 
+}
+  
+  /* poppins-500 - latin */
+  @font-face {
+  font-display: swap; 
+  font-family: 'Poppins-500';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/poppins-v21-latin/poppins-v21-latin-500.woff2') format('woff2'); 
+}
+  
+*, ::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+  
+body{
+  font-family: 'Poppins-regular', 'Times New Roman', Times, serif;
+  font-size: rem(16px);
+
+  width: 100vw;
+}
+
+.active{
+  color: $red-light;
+}
+  

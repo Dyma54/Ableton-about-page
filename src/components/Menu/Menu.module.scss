@@ -1,0 +1,91 @@
+@import '../../assets/styles/colors.scss'; 
+@import '../../assets/styles/fonctions.scss'; 
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 0 3rem;
+    background-color: inherit;
+
+    span{
+        cursor: pointer;
+
+        img{
+            width: rem(12px);
+            aspect-ratio: 1 / 1;
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+.mainNavBarVertical{
+    background-color: blue;
+    color: white;
+    padding: 1rem 3rem;
+
+    a{
+        text-decoration: none;
+        color: white;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    
+
+    .topLinks{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .middleLinks{
+        font-size: rem(10px); 
+
+        p{
+            margin-bottom: 1rem;
+        }
+    }
+
+    .bottomLinks{
+        font-size: rem(10px); 
+
+        overflow-x: auto;
+
+        nav {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% / 4);
+            padding-right: 1rem;
+
+            p{
+                a{
+                    font-weight: 900;
+                    font-size: rem(12px);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 900px){
+    .mainNavBarVertical{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .mainNavBarVertical{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+}
